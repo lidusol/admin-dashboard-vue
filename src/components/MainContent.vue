@@ -5,6 +5,7 @@ import LargeCard from '@/components/LargeCard.vue'
 import IconStatVue from '@/components/icons/IconStat.vue'
 import IconEllipsis from '@/components/icons/IconEllipsis.vue'
 import IconPlus from '@/components/icons/IconPlus.vue'
+import BarChart from '@/components/BarChart.vue'
 import DataTable from '@/components/DataTable.vue'
 import TaskList from '@/components/TaskList.vue'
 import TeamMembers from '@/components/TeamMembers.vue'
@@ -23,7 +24,9 @@ import TeamMembers from '@/components/TeamMembers.vue'
       <AccountData />
       <div class="grid gap-4 mt-4 laptop:grid-cols-2 laptop:grid-rows-2">
         <LargeCard title="" :icon="IconStatVue"></LargeCard>
-        <LargeCard title="Weekly Revenue" :icon="IconStatVue"></LargeCard>
+        <LargeCard title="Weekly Revenue" :icon="IconStatVue">
+          <BarChart />
+        </LargeCard>
         <LargeCard title="Complex Table" :icon="IconEllipsis" class="col-span-1">
           <DataTable />
         </LargeCard>
