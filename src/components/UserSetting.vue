@@ -7,7 +7,7 @@ import UserAvatar from '@/components/UserAvatar.vue'
 
 <template>
   <div class="bg-white rounded-30 p-2 flex items-center gap-4 h-max">
-    Search
+    <input class="rounded-50 h-41 bg-divider pl-8" placeholder="Search" />
     <IconNotification />
     <IconMoon />
     <IconInfoOutline />

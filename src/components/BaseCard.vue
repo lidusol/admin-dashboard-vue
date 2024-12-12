@@ -29,7 +29,7 @@ defineProps({
 
 <template>
   <div
-    class="bg-white rounded-20 py-5 px-[17px] min-w-248 flex items-center gap-4"
+    class="bg-white rounded-20 py-5 px-[17px] laptop:min-w-248 flex items-center gap-4"
     :class="{ 'flex-row-reverse': iconPosition === 'right' }"
   >
     <div v-if="icon" class="flex items-center gap-2">

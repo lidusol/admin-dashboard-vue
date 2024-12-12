@@ -8,7 +8,7 @@ import IconDoc from '@/components/icons/IconDoc.vue'
 </script>
 
 <template>
-  <div class="flex gap-4">
+  <div class="grid gap-4 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-6">
     <BaseCard :icon="IconStat" icon-position="left" title="Earnings" body="$350.4" />
     <BaseCard :icon="IconDollar" icon-position="left" title="Spend this month" body="$642.39" />
     <BaseCard title="Sales" body="$574.34">

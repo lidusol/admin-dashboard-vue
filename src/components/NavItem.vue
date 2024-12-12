@@ -1,6 +1,4 @@
 <script setup lang="ts">
-// define two props
-// icon and title
 defineProps({
   icon: {
     type: Object,

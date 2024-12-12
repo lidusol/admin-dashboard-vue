@@ -4,8 +4,10 @@ import MainContent from '@/components/MainContent.vue'
 </script>
 
 <template>
-  <div class="flex">
-    <LeftNav />
-    <MainContent />
+  <div class="laptop:h-screen w-screen">
+    <div class="flex pb-8 h-full w-full">
+      <LeftNav />
+      <MainContent />
+    </div>
   </div>
 </template>
