@@ -2,9 +2,11 @@
 import UserSetting from '@/components/UserSetting.vue'
 import AccountData from '@/components/AccountData.vue'
 import LargeCard from '@/components/LargeCard.vue'
+import IconCalendar from '@/components/icons/IconCalendar.vue'
 import IconStatVue from '@/components/icons/IconStat.vue'
 import IconEllipsis from '@/components/icons/IconEllipsis.vue'
 import IconPlus from '@/components/icons/IconPlus.vue'
+import LineGraph from '@/components/LineGraph.vue'
 import BarChart from '@/components/BarChart.vue'
 import DataTable from '@/components/DataTable.vue'
 import TaskList from '@/components/TaskList.vue'
@@ -23,7 +25,15 @@ import TeamMembers from '@/components/TeamMembers.vue'
     <div class="overflow-y-scroll laptop:max-h-content">
       <AccountData />
       <div class="grid gap-4 mt-4 laptop:grid-cols-2 laptop:grid-rows-2">
-        <LargeCard title="" :icon="IconStatVue"></LargeCard>
+        <LargeCard title="" :icon="IconStatVue">
+          <template #title>
+            <div class="flex gap-1 bg-divider p-2 rounded-lg">
+              <IconCalendar />
+              <span class="text-sm text-fadedGray">This month</span>
+            </div>
+          </template>
+          <LineGraph />
+        </LargeCard>
         <LargeCard title="Weekly Revenue" :icon="IconStatVue">
           <BarChart />
         </LargeCard>

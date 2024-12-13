@@ -1,9 +1,3 @@
-<template>
-  <div class="flex items-end justify-center">
-    <Bar id="weekly-revenu" :options="chartOptions" :data="chartData" />
-  </div>
-</template>
-
 <script setup lang="ts">
 import { Bar } from 'vue-chartjs'
 import {
@@ -87,3 +81,9 @@ const chartOptions: ChartOptions<'bar'> = {
   },
 }
 </script>
+
+<template>
+  <div class="flex items-end justify-center">
+    <Bar id="weekly-revenue" :options="chartOptions" :data="chartData" />
+  </div>
+</template>

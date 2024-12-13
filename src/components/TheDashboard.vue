@@ -8,6 +8,7 @@ import MainContent from '@/components/MainContent.vue'
     <div class="flex pb-8 h-full w-full">
       <LeftNav />
       <MainContent />
+      <DisputePage />
     </div>
   </div>
 </template>
