@@ -4,7 +4,10 @@ const extendedColors = {
   background: 'var(--vt-c-background)',
   primary: 'var(--vt-c-primary)',
   fadedGray: 'var(--vt-c-faded-gray)',
-  green: 'var(--vt-c-green)',
+  green: {
+    1: 'var(--vt-c-green)',
+    2: 'var(--vt-c-green-2)',
+  },
   blue: {
     1: 'var(--vt-c-blue-1)',
     2: 'var(--vt-c-blue-2)',

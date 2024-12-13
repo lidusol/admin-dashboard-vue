@@ -14,7 +14,7 @@ import IconDoc from '@/components/icons/IconDoc.vue'
     <BaseCard title="Sales" body="$574.34">
       <template #footer>
         <span class="text-fadedGray"
-          ><span class="text-green font-bold">+23%</span> since last month</span
+          ><span class="text-green-1 font-bold">+23%</span> since last month</span
         >
       </template>
     </BaseCard>

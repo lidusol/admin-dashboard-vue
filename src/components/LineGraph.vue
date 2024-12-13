@@ -90,13 +90,13 @@ const chartOptions: ChartOptions<'line'> = {
       <p class="text-34 font-bold">$37.5K</p>
       <p class="text-base text-fadedGray">
         Total Spent
-        <span class="text-sm font-bold text-green ml-4"
+        <span class="text-sm font-bold text-green-1 ml-4"
           ><IconArrowUp class="inline mr-2" /> +2.45%</span
         >
       </p>
       <div class="flex gap-1 mt-4">
         <IconCheck />
-        <p class="text-base font-bold text-green">On track</p>
+        <p class="text-base font-bold text-green-1">On track</p>
       </div>
     </div>
     <div class="flex-1">

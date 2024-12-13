@@ -1,9 +1,5 @@
-<script setup lang="ts">
-import TheDashboard from './components/TheDashboard.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <main>
-    <TheDashboard />
-  </main>
+  <router-view></router-view>
 </template>
