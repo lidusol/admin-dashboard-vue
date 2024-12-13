@@ -15,8 +15,14 @@ This is an **Admin Dashboard** built using **Vue 3** and **Tailwind CSS**. It in
   Tailwind CSS has been customized to align with the design requirements, including updated colors, typography, spacing, and other utility classes.  
 
 - **Dynamic Charts**:  
-  Integrated with **VueChartJS** to render bar graphs and line graphs with configurable data and visual styling.  
+  Integrated with **VueChartJS** to render bar graphs and line graphs with configurable data and visual styling.
 
+## Deployment
+
+This project is deployed on [Vercel](https://vercel.com). You can check out the live version here:
+
+👉 **[Live Demo](https://admin-dashboard-vue.vercel.app/)**
+ 
 
 ## Project Setup
 
