@@ -5,7 +5,7 @@ import IconEllipsis from '@/components/icons/IconEllipsis.vue'
 
 defineProps({
   photoSrc: {
-    type: Object,
+    type: String,
     required: false,
   },
   fullName: {
@@ -22,7 +22,7 @@ defineProps({
 <template>
   <div class="bg-white rounded-2xl p-2 flex items-center gap-4 shadow-teamCard">
     <div v-if="photoSrc" class="flex items-center gap-2">
-      <div class="flex items-center justify-center rounded-full w-14 h-14 bg-background">
+      <div class="flex items-center justify-center rounded-full">
         <UserAvatar :src="photoSrc" alt="User Profile" />
       </div>
     </div>

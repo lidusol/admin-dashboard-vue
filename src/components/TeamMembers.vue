@@ -4,10 +4,18 @@ import TeamCard from '@/components/TeamCard.vue'
 
 <template>
   <div class="flex flex-col gap-4">
-    <TeamCard photoSrc="/images/avatar.png" fullName="Adela Parkson" position="Creative Director" />
-    <TeamCard photoSrc="/images/avatar.png" fullName="Christian Mad" position="Product Designer" />
     <TeamCard
-      photoSrc="/images/avatar.png"
+      photoSrc="/images/AdelaParkson.png"
+      fullName="Adela Parkson"
+      position="Creative Director"
+    />
+    <TeamCard
+      photoSrc="/images/ChristianMad.png"
+      fullName="Christian Mad"
+      position="Product Designer"
+    />
+    <TeamCard
+      photoSrc="/images/JasonStatham.png"
       fullName="Jason Statham"
       position="Junior Graphic Designer"
     />
