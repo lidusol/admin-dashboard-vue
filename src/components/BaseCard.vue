@@ -20,6 +20,10 @@ defineProps({
     type: [String, Object],
     required: true,
   },
+  footer: {
+    type: [String, Object],
+    required: false,
+  },
   hasSelect: {
     type: Boolean,
     default: false,

@@ -11,13 +11,15 @@ import BarChart from '@/components/BarChart.vue'
 import DataTable from '@/components/DataTable.vue'
 import TaskList from '@/components/TaskList.vue'
 import TeamMembers from '@/components/TeamMembers.vue'
+
+const variant = 'sm'
 </script>
 
 <template>
   <div class="px-4 py-49 flex-1">
     <div class="flex justify-between">
       <div class="ml-2">
-        <p class="text-blue-2">Pages / Dashboard</p>
+        <p class="text-blue-3">Pages / Dashboard</p>
         <h1 class="text-34 font-bold text-primary leading-10 mb-5">Main Dashboard</h1>
       </div>
       <UserSetting />
@@ -41,7 +43,7 @@ import TeamMembers from '@/components/TeamMembers.vue'
           <DataTable />
         </LargeCard>
         <div class="grid gap-4 laptop:grid-cols-2">
-          <LargeCard :icon="IconEllipsis" variant="sm">
+          <LargeCard :icon="IconEllipsis" :variant="'sm'">
             <template #title>
               <div class="flex gap-2">
                 <div class="flex items-center justify-center w-33 h-33 bg-divider p-2 rounded-full">
