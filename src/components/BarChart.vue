@@ -43,9 +43,6 @@ const chartData: ChartData<'bar'> = {
 const chartOptions: ChartOptions<'bar'> = {
   responsive: true,
   plugins: {
-    legend: {
-      display: false,
-    },
     tooltip: {
       enabled: true,
     },

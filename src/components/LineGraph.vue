@@ -9,12 +9,13 @@ import {
   LineElement,
   CategoryScale,
   LinearScale,
-  PointElement, // <-- Add this line to register PointElement
+  PointElement,
+  type TooltipItem,
   type ChartOptions,
   type ChartData,
 } from 'chart.js'
 
-ChartJS.register(Title, Tooltip, LineElement, CategoryScale, LinearScale, PointElement) // <-- Add PointElement here
+ChartJS.register(Title, Tooltip, LineElement, CategoryScale, LinearScale, PointElement)
 
 const chartData: ChartData<'line'> = {
   labels: ['SEP', 'OCT', 'NOV', 'DEC', 'JAN', 'FEB'], // x-axis labels
@@ -41,11 +42,16 @@ const chartData: ChartData<'line'> = {
 const chartOptions: ChartOptions<'line'> = {
   responsive: true,
   plugins: {
-    legend: {
-      display: true,
-    },
     tooltip: {
       enabled: true,
+      callbacks: {
+        title: function (_: TooltipItem<'line'>[]) {
+          return ''
+        },
+        label: function (context: TooltipItem<'line'>) {
+          return '$' + context.parsed.y
+        },
+      },
     },
   },
   scales: {
